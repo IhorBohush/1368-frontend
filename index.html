@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Winery</title>
+    <link
+      rel="shortcut icon"
+      href="img/global/wine-favicon.png"
+      type="image/x-icon"
+    />
+    <script
+      src="https://unpkg.com/htmx.org@1.9.10"
+      integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+  <body>
+    <!--start Alisa Korniienko-->
+    <div
+      data-hx-trigger="load"
+      data-hx-swap="outerHTML"
+      data-hx-get="index.popup.partial.html">
+    </div>
+    <header class="header">
+      <nav
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="global.header-nav.partial.html"
+      ></nav>
+      <div
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="index.header-hero.partial.html"
+      ></div>
+    </header>
+    <!--end Alisa Korniienko-->
+    <main>
+      <!-- start Olena Hrynyshyn section -->
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="index.section-natural.partial.html"
+      ></section>
+      <!-- end Olena Hrynyshyn section -->
+      <!-- start Ihor Bohush block 4-cta discover (crafted by) -->
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="index.crafted.partial.html"
+      ></section>
+      <!-- end Ihor Bohush block -->
+      <!--start Marian Hrychak section -->
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="index.section-best-deals.partial.html>"
+      ></section>
+      <!-- end Marian Hrychak -->
+      <!-- History block (Number 6) - Anton. -->
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="index.main-history.partial.html"
+      ></section>
+      <!-- end Anton Koluh section -->
+      <!-- start Alexsandra Bahlai section -->
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="index.main-about.partial.html"
+      ></section>
+      <!-- end Alexsandra Bahlai section -->
+      <!--start Iryna Gnatenko https://trello.com/c/7A048Iif/8-8-shop-->
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="index.main-shop.partial.html"
+      ></section>
+      <!--end Iryna Gnatenko https://trello.com/c/7A048Iif/8-8-shop-->
+      <!--start Iryna Gnatenko https://trello.com/c/2J4nXpvg/9-9-video-->
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="index.main-video.partial.html"
+      ></section>
+      <!--end Iryna Gnatenko https://trello.com/c/2J4nXpvg/9-9-video-->
+      <!--start Mariia Kochetkova https://trello.com/c/aqzF1Xo4/10-10-categories-->
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="index.section-winehub.partial.html"
+      ></section>
+      <!--end Mariia Kochetkova https://trello.com/c/aqzF1Xo4/10-10-categories-->
+      <!--start Roman Kholod-->
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="index.main-awards.partial.html"
+      ></section>
+      <!--end Roman kholod-->
+      <!--start Olena Budko-->
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="index.faq.partial.html"
+      ></section>
+      <!--end Olena Budko-->
+    </main>
+    <!-- start Alexsandra Bahlai section -->
+     <!--start Yaroslav Demian -->
+     <section
+     data-hx-trigger="load"
+     data-hx-swap="outerHTML"
+     data-hx-get="index.footnote.partial.html"
+   ></section>
+   <!--end Yaroslav Demian -->
+    <footer>
+      <nav
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="global.footer.partial.html"
+      ></nav>
+    </footer>
+    <script src="js/index.js"></script>
+  </body>
+</html>

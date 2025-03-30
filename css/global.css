@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Prata&display=swap");
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /*outline: 1px solid red;*/
+}
+
+:root {
+  font-family: "Rubik", sans-serif; /*primary font*/
+  --secondary-font: "Prata", serif;
+  --accent-font: "Great Vibes", cursive;
+  --index-history-p-font: "Rubik", sans-serif;
+  --index-history-header-font: "Prata", serif;
+  --index-history-font-color: #898084;
+  --font-color-seconday: #c8693a;
+  --color-light: rgb(255, 255, 255);
+  --color-secondary-text: rgb(137, 128, 130);
+  --brand-color: rgb(200, 105, 58);
+  --btn-hover-color: rgb(175, 86, 42);
+  --btn-border-radius: 2px;
+  scroll-behavior: smooth;
+  --mobile-background-color-nav: rgb(26, 21, 18);
+  --background-color-dark:#261e1c;
+  --background-color-footer:rgb(27, 22, 19);
+  --footer-color-text:rgb(137, 128, 130);
+  --background-color-footer-email: rgba(73, 73, 73, 0.24);
+  --background-color-footer-bottom:rgb(19, 15, 14);
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
