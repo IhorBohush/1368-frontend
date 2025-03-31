@@ -1,5 +1,7 @@
-// const craftedAccordion = document.querySelector('.crafted__accordion--icon').addEventListener('click', craftedFormContainer);
-// const craftedAccordionIcon = document.querySelector('.crafted__accordion--icon', '::after');
-// function craftedFormContainer() {
-//     craftedAccordionIcon.style.opacity = 0;
-// }
+const craftedAccordion = document.querySelector('.crafted__accordion--item').addEventListener('click', craftedFormContainer);
+const craftedAccordionIcon = document.querySelector('.crafted__accordion--icon');
+const craftedAccordionForm = document.querySelector('.crafted__accordion--form')
+function craftedFormContainer() {
+    craftedAccordionIcon.classList.toggle('active');
+    craftedAccordionForm.classList.toggle('active');
+}

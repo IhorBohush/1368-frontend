@@ -156,16 +156,19 @@
                     width: 100%;
                     height: 0.125rem;
                     background-color: var(--color-light);
-                    opacity: 1;
+                    /* opacity: 1; */
                 }
-                .crafted__accordion--item:hover .crafted__accordion--icon::after {
-                    opacity: 0;
+                .crafted__accordion--icon.active::after {
+                    opacity: 0;;
                 }
             }
             .crafted__accordion--form {
                 display: none;
                 flex-direction: column;
                 overflow: hidden;
+            }
+            .crafted__accordion--form.active {
+                display: flex;
             }
         }
     }
