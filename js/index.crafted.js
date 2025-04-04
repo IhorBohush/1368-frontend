@@ -1,12 +1,12 @@
-const craftedAccordionItem = document.querySelector('.crafted__accordion--item').addEventListener('click', craftedFormContainer);
+// Ihor Bohush
 const craftedAccordion = document.querySelector('.crafted__accordion');
 const craftedAccordionIcon = document.querySelector('.crafted__accordion--icon');
 const craftedAccordionForm = document.querySelector('.crafted__accordion--form');
-function craftedFormContainer() {
+const craftedAccordionItem = document.querySelector('.crafted__accordion--item').addEventListener('click', () => {
     craftedAccordionIcon.classList.toggle('active');
     craftedAccordionForm.classList.toggle('active');
     craftedAccordion.classList.toggle('active');
-}
+})
 
 const craftedForm = document.getElementById('craftedform');
 const craftedResult = document.getElementById('craftedresult');
