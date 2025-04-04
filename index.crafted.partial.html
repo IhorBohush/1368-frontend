@@ -14,20 +14,20 @@
                 <p class="crafted__accordion--text">Write to us</p>
                 <div class="crafted__accordion--icon"></div>
             </div>
-            <form method="POST" class="crafted__accordion--form">
+            <form id="craftedform" method="POST" class="crafted__accordion--form">
 
                 <input type="hidden" name="access_key" value="0d2161ae-8572-4059-a69a-604f4e7e2176">
                 <input type="hidden" name="subject" value="New Submission from Web3Forms">
                 <input type="checkbox" name="botcheck" id="" style="display: none;">
             
                 <!-- Custom Form Data -->
-                <input type="email" name="email" required>
+                <input type="email" name="email" placeholder="email" required>
                 <input type="text" name="name" placeholder="name" required>
-                <textarea name="message" required></textarea>
+                <textarea name="message" placeholder="message" required></textarea>
             
-                <button type="submit">Submit</button>
+                <button type="submit">Send</button>
             
-                <div id="result"></div>
+                <div id="craftedresult"></div>
             
             </form>
         </div>

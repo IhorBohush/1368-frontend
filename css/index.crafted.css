@@ -119,22 +119,30 @@
             justify-content: center;
             align-items: center;
             flex-direction: column;
-            width: 100%;
+            /* width: 100%; */
 
             .crafted__accordion--item {
                 position: relative;
-                margin: 20px 0;
+                margin: 40px 0 10px;
                 display: flex;
                 justify-content: space-around;
                 align-items: center;
                 flex-direction: row;
                 cursor: pointer;
                 width: 100%;
+                height: 47px;
+                /* background-color: var(--brand-color);
+                border-radius: var(--btn-border-radius);
+                transition: background-color 0.3s ease-in-out;
+                &:hover {
+                    background-color: var(--btn-hover-color);
+                } */
             
                 .crafted__accordion--text {
                     color: var(--color-light);
-                    font-size: 1.125rem;
-                    font-family: var(--secondary-font);
+                    font-size: 0.9375rem;
+                    font-weight: bold;
+                    /* font-family: var(--secondary-font); */
                 }
                 .crafted__accordion--icon {
                     display: flex;
@@ -150,6 +158,7 @@
                     width: 0.125rem;
                     height: 100%;
                     background-color: var(--color-light);
+                    border-radius: 3px;
                     opacity: 1;
                     transition: opacity 0.3s ease-in-out;
                 }
@@ -158,6 +167,7 @@
                     position: absolute;
                     width: 100%;
                     height: 0.125rem;
+                    border-radius: 3px;
                     background-color: var(--color-light);
                     /* opacity: 1; */
                 }
@@ -166,41 +176,118 @@
                 }
             }
             .crafted__accordion--form {
+                background-color: rgba(255, 255, 255, 0.9); /* Напівпрозорий білий фон */
+                border-radius: 8px;
+                width: 100%;
+                /* margin: 20px auto; */
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
                 display: flex;
                 flex-direction: column;
+                /* gap: 15px; */
                 /* opacity: 0; */
                 max-height: 0;
                 overflow: hidden;
-                width: 50%;
-                padding: 0;
+                margin: 0;
                 /* transform: scaleY(0); */
-                transform-origin: top;
-                transition: opacity 0.3s ease-in-out, max-height 0.3s ease-in-out, padding 0.3s ease-in-out;
+                /* transform-origin: top; */
+                transition: opacity 0.3s ease-in-out, max-height 0.3s ease-in-out, margin 0.3s ease-in-out;
                 /* overflow: hidden; */
                 /* transition: display 2s ease-in-out; */
             }
+
+            /* Стилі для полів вводу */
+            .crafted__accordion--form input,
+            .crafted__accordion--form textarea {
+                width: 100%;
+                padding: 12px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                font-family: var(--secondary-font);
+                font-size: 1rem;
+                color: #333;
+            }
+
+            /* Стилі для текстового поля */
+            .crafted__accordion--form textarea {
+                height: 120px;
+                resize: vertical;
+            }
+
+            /* Стилі для кнопки відправки */
+            .crafted__accordion--form button {
+                background-color: var(--brand-color);
+                color: #fff;
+                border: none;
+                padding: 12px;
+                font-size: 1rem;
+                text-transform: uppercase;
+                font-weight: bold;
+                border-radius: 4px;
+                cursor: pointer;
+                transition: background-color 0.3s ease;
+                width: 100%;
+            }
+
+            .crafted__accordion--form button:hover {
+                background-color: var(--btn-hover-color);
+            }
+
+            /* Результати форми */
+            #craftedresult {
+                height: 30px;
+                margin-top: 10px;
+                text-align: center;
+                font-size: 0.9rem;
+                color: #333;
+            }
+
+            /* Адаптивність */
+            /* @media (max-width: 768px) {
+                .crafted__accordion--form {
+                    padding: 20px;
+                }
+            } */
             .crafted__accordion--form.active {
                 /* opacity: 1; */
-                max-height: 200px;
-                padding: 0 0 20px 0;
+                max-height: 250px;
+                margin: 15px;
                 /* transform: scaleY(1); */
             }
         }
+        
+        .crafted__accordion::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 1px;
+            
+            /* bottom: 0; */
+            /* transform: translateY(0);
+            transform: scaleX(0);
+            transform-origin: top; */
+            background-color: var(--footer-color-text);
+            /* transition: transform 0.3s ease-in-out; */
+        }
+
         .crafted__accordion::after {
             content: '';
             position: absolute;
             width: 100%;
-            height: 2px;
+            height: 1px;
             
             bottom: 0;
             transform: translateY(0);
+            /* transform: scaleX(0); */
             transform-origin: top;
             background-color: var(--footer-color-text);
             transition: transform 0.3s ease-in-out;
         }
+        /* .crafted__accordion:hover::after {
+            transform: scaleX(1);
+        } */
         .crafted__accordion.active::after {
             transform: translateY(100%);
-            
+            transform: scaleX(1);
         }
     }
 }
